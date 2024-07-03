@@ -29,10 +29,6 @@ li {
 @media (min-width:768px) and (max-width: 1023px) {
   .container {
     max-width: 80%;
-  .products {
-      grid-template-columns: repeat(2, 48.5%);
-      column-gap: 3%;
-  }
   }
 }
 .product-item {
@@ -85,6 +81,12 @@ section .products {
   column-gap: 1%;
   row-gap: 4%;
   width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
 }
 section .product-item img {
   width: 100%;
